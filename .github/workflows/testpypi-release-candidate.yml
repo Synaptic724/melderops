@@ -21,7 +21,7 @@ jobs:
     timeout-minutes: 10
 
     environment:
-      name: pypitest
+      name: testpypi
       url: https://test.pypi.org/project/melderops/
 
     steps:
