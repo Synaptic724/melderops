@@ -1,2 +1,3 @@
-# melderops
-MelderOps
+# MelderOps™
+
+Operations and orchestration built on Melder.
