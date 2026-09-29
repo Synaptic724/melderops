@@ -1,8 +1,9 @@
 name: Publish release candidate
 
 on:
-  push:
+  pull_request:
     branches: [release_candidate]
+    types: [closed]
   workflow_dispatch:
 
 permissions:
@@ -15,6 +16,7 @@ concurrency:
 jobs:
   publish:
     name: Publish release_candidate to TestPyPI
+    if: github.event_name == 'workflow_dispatch' || github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
