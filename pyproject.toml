@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "melderops"
+version = "0.0.1"
+description = "MelderOps - operations and orchestration built on Melder."
+requires-python = ">=3.14"
+license = "AGPL-3.0-or-later"
+
+authors = [
+    { name = "Mark Geleta", email = "SynapticAISystems@gmail.com" }
+]
+
+dependencies = [
+    "melder>=0.2.8207",
+]
+
+[project.urls]
+Homepage = "https://github.com/Synaptic724/melderops"
+Repository = "https://github.com/Synaptic724/melderops"
+Issues = "https://github.com/Synaptic724/melderops/issues"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["melderops*"]
